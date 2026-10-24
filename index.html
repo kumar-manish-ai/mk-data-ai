@@ -41,6 +41,13 @@ main{width:100%;max-width:none;margin:0;background:var(--paper);color:var(--ink)
 @media(max-width:900px){.hero{grid-template-columns:1fr;gap:34px;padding-top:70px;padding-bottom:60px}.hero-copy{max-width:760px}.hero-visual{max-width:580px;width:100%}.projects{grid-template-columns:repeat(2,minmax(0,1fr))}.section-head{display:block}.section-lead{margin-top:12px;max-width:620px}.awards{grid-template-columns:repeat(2,minmax(0,1fr))}.navlinks{gap:15px}.navlinks a:nth-child(2),.navlinks a:nth-child(4){display:none}}
 @media(max-width:600px){.wrap,.metrics{width:calc(100% - 32px)}.nav{min-height:62px}.brand{font-size:11px}.mark{width:32px;height:32px}.brand small{font-size:8px}.navlinks{gap:9px;font-size:10px}.navlinks a:nth-child(1),.navlinks a:nth-child(3){display:none}.navlinks a:last-child{padding:8px 10px}.hero{padding:58px 20px 44px;gap:28px}.hero h1{font-size:clamp(43px,12vw,59px);margin:19px 0}.hero .intro{font-size:14px;line-height:1.8}.btn{padding:10px 12px;font-size:11px}.hero-visual{padding:14px}.orbit{min-height:190px}.visual-top{font-size:8px}.visual-foot{font-size:9px}.metrics{grid-template-columns:1fr;gap:16px;padding:23px 0}.metric{padding-left:14px}.metric strong{font-size:25px}.section{padding:54px 16px}.section h2{font-size:32px}.architecture-grid,.projects,.skillgrid,.education{grid-template-columns:1fr}.diagram-card.wide{grid-column:auto}.diagram-card{padding:14px}.diagram-title{display:block}.diagram-label{display:inline-block;margin-top:9px}.project{min-height:0;padding:19px}.awards{grid-template-columns:1fr 1fr}.award{padding:13px}.timeline{margin-left:5px;padding-left:23px}.job:before{left:-28px}.jobhead{display:block}.date{display:block;margin-top:5px}.contactbox{padding:23px}.contactbox h2{font-size:32px}.footer{padding:20px 16px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+
+/* Refined Impact Dashboard details */
+:focus-visible{outline:3px solid #32836e;outline-offset:3px}
+.project,.skill,.award,.edu,.diagram-card{transition:transform .2s,border-color .2s,box-shadow .2s}
+.skill:hover,.award:hover,.edu:hover{transform:translateY(-2px);border-color:#b4d9cd;box-shadow:0 8px 22px #1b3a2b08}
+.project:focus-within{border-color:#9bcdbd;box-shadow:0 10px 26px #1b3a2b0b}
+@media(prefers-reduced-motion:reduce){.project,.skill,.award,.edu,.diagram-card{transition:none!important}}
 </style>
 </head>
 <body>
