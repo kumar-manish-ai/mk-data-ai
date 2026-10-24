@@ -1,69 +1,38 @@
-# Manish Kumar
+# Manish Kumar — Data & AI Architecture
 
-### Senior Solution Architect | Data & AI Architecture | Agentic AI | LLM | RAG
+Personal portfolio for enterprise Data, AI and solution architecture, with reference diagrams for Agentic AI, RAG, and AI observability.
 
-17+ years of experience designing and delivering enterprise-scale **Data, AI and Analytics platforms**.
+## Portfolio
 
-I focus on solving complex enterprise problems where **data, artificial intelligence and software engineering** come together to build scalable, reliable and production-ready platforms.
+- **Profile:** Senior Solution Architect focused on enterprise Data & AI architecture, Agentic AI, LLM/RAG, cloud data platforms, and real-time intelligence.
+- **Experience and credentials:** Resume-grounded details are presented in `index.html`; architecture diagrams are illustrative reference patterns, not claims that every depicted component is deployed.
+- **Contact:** [LinkedIn](https://www.linkedin.com/in/manish-kumar-100570175/) · [GitHub](https://github.com/mk-data-ai) · [Email](mailto:manish.chaudhary.mrt@gmail.com)
 
----
+## GitHub Pages deployment
 
-## 🔹 Areas of Expertise
+A GitHub Actions workflow in `.github/workflows/pages.yml` publishes the repository root as a static GitHub Pages site.
 
-- 🏗️ **Data & Solution Architecture** — Enterprise Data Platforms, Data Modeling, Data Governance
-- 🤖 **Agentic AI** — Multi-Agent Systems, Agent Workflows, Tool Execution, Context & Memory
-- 🧠 **LLM & RAG** — LLM Applications, Retrieval-Augmented Generation, Enterprise Knowledge Systems
-- 📊 **Machine Learning** — Predictive Analytics, Classification, Regression, Clustering, Anomaly Detection
-- ☁️ **Cloud & Data Platforms** — Databricks, AWS, PySpark
-- ⚡ **Real-Time Systems** — Kafka, Event-Driven Architecture, Real-Time Analytics
-- 🔧 **AI-enabled Engineering** — Code Generation, Debugging, Refactoring, CI/CD Automation
-- 🚀 **Platform Engineering** — Kubernetes, Docker, CI/CD
+1. Open **Settings → Pages** for this repository.
+2. Under **Build and deployment**, choose **GitHub Actions** as the source.
+3. Open **Actions** and confirm the Pages workflow completes successfully.
+4. The project site is normally available at `https://mk-data-ai.github.io/mk-data-ai/` after Pages is enabled and deployment finishes.
 
----
+## Custom domain plan: `manishkumar.ai`
 
-## 🚀 What I'm Building
+The domain is a preference, not a confirmed registration. Availability and registration have **not** been verified or completed. Do not configure the domain in Pages or add a `CNAME` file until you have registered/controlled it.
 
-This GitHub profile focuses on **public-safe reference implementations and architecture demonstrations** around:
+After acquiring the domain:
 
-### Enterprise AI Agent Platform
-Multi-agent architecture demonstrating LLM-powered workflows, tool execution, code generation and developer automation.
+1. In GitHub, open **Settings → Pages → Add a domain** (or the custom-domain field) and follow GitHub's domain-verification instructions. Prefer verifying the domain before attaching it to the site.
+2. At the DNS provider, point the apex/root domain to GitHub Pages using the current official GitHub Pages DNS records. GitHub's documented IPv4 A records are `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, and `185.199.111.153`; add the documented IPv6 AAAA records if desired. A DNS provider's supported ALIAS/ANAME option may also work.
+3. Optionally add `www` with a CNAME pointing directly to `mk-data-ai.github.io` (not the repository path), and configure the preferred canonical domain in Pages.
+4. Wait for DNS propagation and GitHub's certificate provisioning. Then enable **Enforce HTTPS** in **Settings → Pages** when available.
+5. Verify both DNS resolution and the final HTTPS URL after deployment.
 
-### RAG Enterprise Knowledge System
-A reference architecture for building context-aware AI applications using enterprise data, retrieval and LLMs.
+Official guides:
+- [Configuring a custom domain](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site)
+- [Managing custom domains and DNS records](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
+- [Verifying a custom domain](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages)
+- [Securing GitHub Pages with HTTPS](https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https)
 
-### AI-Driven Observability
-An AI-powered observability architecture combining anomaly detection, contextual retrieval and LLM-based analysis.
-
-### Data & AI Architecture Patterns
-Reusable patterns and examples for designing modern enterprise Data & AI platforms.
-
----
-
-## 🧩 Technology
-
-**AI & ML**  
-Agentic AI · LLM · RAG · Machine Learning · NLP
-
-**Data**  
-Databricks · PySpark · Data Engineering · Data Modeling · Data Warehousing
-
-**Cloud**  
-AWS · Cloud Architecture · Kubernetes · Docker
-
-**Streaming & Distributed Systems**  
-Apache Kafka · Event-Driven Architecture · Microservices
-
-**Engineering**  
-Python · Java · SQL · CI/CD · GitHub Actions
-
----
-
-## 🎯 Architecture Interests
-
-**Data + AI** · **Agentic Systems** · **LLM Applications** · **Enterprise AI** · **Cloud Platforms** · **Real-Time Systems** · **Data Platforms**
-
----
-
-## 📫 Connect
-
-[LinkedIn](https://www.linkedin.com/in/manish-kumar-100570175/)
+Avoid wildcard DNS records. DNS changes and HTTPS certificate provisioning can take time; follow the current GitHub documentation if the dashboard's instructions differ.
