@@ -48,6 +48,16 @@ main{width:100%;max-width:none;margin:0;background:var(--paper);color:var(--ink)
 .skill:hover,.award:hover,.edu:hover{transform:translateY(-2px);border-color:#b4d9cd;box-shadow:0 8px 22px #1b3a2b08}
 .project:focus-within{border-color:#9bcdbd;box-shadow:0 10px 26px #1b3a2b0b}
 @media(prefers-reduced-motion:reduce){.project,.skill,.award,.edu,.diagram-card{transition:none!important}}
+
+/* Subtle, reduced-motion-aware motion and polished focus states */
+:focus-visible{outline:3px solid #32836e;outline-offset:3px}
+.hero-copy,.impact-panel{animation:rise-in .65s cubic-bezier(.2,.7,.2,1) both}
+.impact-panel{animation-delay:.1s}
+@keyframes rise-in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.project,.skill,.award,.edu,.diagram-card{transition:transform .2s,border-color .2s,box-shadow .2s}
+.skill:hover,.award:hover,.edu:hover{transform:translateY(-2px);border-color:#b4d9cd;box-shadow:0 8px 22px #1b3a2b08}
+.project:focus-within{border-color:#9bcdbd;box-shadow:0 10px 26px #1b3a2b0b}
+@media(prefers-reduced-motion:reduce){.hero-copy,.impact-panel{animation:none}.project,.skill,.award,.edu,.diagram-card{transition:none!important}}
 </style>
 </head>
 <body>
